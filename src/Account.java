@@ -1,4 +1,6 @@
 public class Account {
+
+    private static final double FEE = 0.50;
     String ownerName;
     double balance;
 
@@ -22,7 +24,7 @@ public class Account {
 
     //withdraw method
     public void deduct(double withdraw){
-        balance = balance - withdraw;
+        balance = balance - withdraw - FEE;
     }
 
     //setter and getter

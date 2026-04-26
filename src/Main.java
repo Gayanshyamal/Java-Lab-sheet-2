@@ -36,13 +36,26 @@ public class Main {
 //        Bicycle bicycle2 = new Bicycle("Gayan",85,"0765402839");
 //        System.out.println(bicycle2.getId());
 
-        Account account1 = new Account();
-        System.out.println(account1.getOwnerName());
-        System.out.println(account1.getBalance());
+//        Account account1 = new Account();
+//        System.out.println(account1.getOwnerName());
+//        System.out.println(account1.getBalance());
+//
+//        Account account2 = new Account("Gayan",2500);
+//        System.out.println(account2.getOwnerName());
+//        System.out.println(account2.getBalance());
 
-        Account account2 = new Account("Gayan",2500);
-        System.out.println(account2.getOwnerName());
-        System.out.println(account2.getBalance());
+        // Passing object to method
+
+        Student student = new Student("gayan@gmail.com","Gayan");
+        System.out.println(student.name);
+
+        LibraryCard libraryCard = new LibraryCard();
+        libraryCard.setOwner(student);
+        System.out.println(libraryCard.getOwner());//give only reference of studentname object
+        System.out.println(libraryCard.getOwner().getName());//give student name
+
+
+
 
 
 
