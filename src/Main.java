@@ -20,21 +20,29 @@ public class Main {
 //        temperatures[0] = 25;
 //        System.out.println("Temp at 1st hour:" + temperatures[0]);
 
-        Bicycle bicycle = new Bicycle();
+//        Bicycle bicycle = new Bicycle();
+//
+//        System.out.println(bicycle.getOwnerName());
+//        System.out.println(bicycle.getId());
+//        System.out.println(bicycle.getContactNo());
+//
+//        bicycle.setOwnerName("Gayan");
+//        bicycle.setId(5511);
+//        bicycle.setContactNo("0765402839");
+//
+//        Bicycle bicycle1 = new Bicycle(75);
+//        System.out.println(bicycle1.getId());
+//
+//        Bicycle bicycle2 = new Bicycle("Gayan",85,"0765402839");
+//        System.out.println(bicycle2.getId());
 
-        System.out.println(bicycle.getOwnerName());
-        System.out.println(bicycle.getId());
-        System.out.println(bicycle.getContactNo());
+        Account account1 = new Account();
+        System.out.println(account1.getOwnerName());
+        System.out.println(account1.getBalance());
 
-        bicycle.setOwnerName("Gayan");
-        bicycle.setId(5511);
-        bicycle.setContactNo("0765402839");
-
-        Bicycle bicycle1 = new Bicycle(75);
-        System.out.println(bicycle1.getId());
-
-        Bicycle bicycle2 = new Bicycle("Gayan",85,"0765402839");
-        System.out.println(bicycle2.getId());
+        Account account2 = new Account("Gayan",2500);
+        System.out.println(account2.getOwnerName());
+        System.out.println(account2.getBalance());
 
 
 

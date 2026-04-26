@@ -2,6 +2,19 @@ public class Account {
     String ownerName;
     double balance;
 
+    //Parameterized  constructor
+    public Account(String ownerName, double balance) {
+        this.ownerName = ownerName;
+        this.balance = balance;
+    }
+
+    //No argument constructor
+
+    public Account() {
+        ownerName = "Unknown";
+        balance = 0;
+    }
+
     //deposit method
     public void add(double deposit){
         balance = balance + deposit ;
